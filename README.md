@@ -1,6 +1,6 @@
 # Flutter Portfolio
 
-Responsive one-page Flutter portfolio inspired by the layout and interactions of `alicec0874203.github.io`.
+Responsive one-page Flutter portfolio.
 
 ## Current UI
 
@@ -9,7 +9,7 @@ Responsive one-page Flutter portfolio inspired by the layout and interactions of
 - Responsive Home, About, Resume, Portfolio and Contact sections
 - Key Skills split into three reference-style groups
 - Desktop work-experience timeline rail while preserving the card layout
-- Reference-style Education timeline
+- Education timeline
 - Large project images with hover overlays on web and tap-to-open links
 - Mobile-friendly project overlays where hover is not available
 
@@ -44,4 +44,6 @@ flutter run -d chrome
 ```
 
 For Android or iOS, select the desired Flutter device and run normally.
+
+### Happy Coding!
 # Bansi-Portfolio
