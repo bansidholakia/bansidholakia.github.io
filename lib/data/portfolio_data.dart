@@ -10,7 +10,7 @@ abstract final class PortfolioData {
   static const String greeting = 'HELLO, THERE!';
   static const String location = 'Toronto, Canada';
   static const String email = 'bansidholakia@gmail.com';
-  static const String github = 'https://github.com/30Bunny';
+  static const String github = 'https://github.com/bansidholakia';
   static const String linkedin = 'https://www.linkedin.com/in/bansi-dholakia/';
   static const String resumeUrl = 'https://example.com/resume.pdf';
 
@@ -118,12 +118,13 @@ abstract final class PortfolioData {
       period: '2024 — Present',
       location: 'Toronto, Canada',
       points: <String>[
-        'Implemented secure authentication and authorization using OAuth 2.0 and token-based authentication, biometric authentication, and encrypted local storage.',
-        'Optimized application performance across startup, UI rendering, and network operations, reduced app startup by 50% (5s to 2.5s) via Android Studio Profiler and Firebase Performance Monitoring.',
-        'Built offline-first architecture with WorkManager and Room database, enabled seamless backend synchronization in low-connectivity environments.',
-        'Integrated backend services across REST, OData, and GraphQL with third-party APIs.',
+        'Built reactive, responsive UI using Jetpack Compose and Material Design with reusable components, ViewModel, and lifecycle-aware state management.',
+        'Architected an incremental Android-to-Kotlin Multiplatform migration, sharing domain, networking, state, and Compose Multiplatform UI across Android and iOS using Ktor, Room KMP, coroutines/Flow, and platform-specific integrations, while retaining native platform navigation and lifecycle boundaries.',
+        'Built secure authentication and authorization flows using OAuth 2.0, OpenID Connect, biometrics, token-based access, Android Keystore, and encrypted local storage.',
+        'Optimized application performance across startup, UI rendering, and network operations, reduced app startup by 50% via Android Studio Profiler and Firebase Performance Monitoring.',
+        'Built offline-first architecture with Room database, enabled seamless backend synchronization.',
+        'Used AI-assisted coding with OpenAI Codex and GitHub Copilot in daily development to accelerate delivery, generate tests, and improve code quality.',
         'Integrated Google Places and Android Location APIs for location-aware functionality, including geographic validation and restricting user login/access within configured location boundaries.',
-        'Built reactive, responsive UI using Jetpack Compose and Material Design with reusable components, LiveData, ViewModel, and lifecycle-aware state management.'
       ],
     ),
     Experience(
@@ -133,10 +134,11 @@ abstract final class PortfolioData {
       location: 'Mumbai, India',
       points: <String>[
         'Designed and developed scalable Android features using Kotlin, Jetpack Compose, and MVVM/Clean Architecture, applying clear separation of concerns across UI, domain, repository, and data layers.',
-        'Architected modular, scalable Android applications using Clean Architecture, Dagger, and Hilt, reducing code complexity by 40% and improving maintainability.',
-        'Migrated codebase to Kotlin and Jetpack Compose, reducing crash rate from 2.1% to 0.8%, cutting development time per feature by 30%, and improving code testability by 72% coverage.',
+        'Implemented scalable dependency injection with Dagger and Hilt, reducing code complexity by 40%.',
+        'Integrated backend services across REST, OData, and GraphQL with third-party APIs.',
         'Led a team of Android developers to build reusable native Android modules exposed to Flutter apps through method channels, enabling shared functionality across native and cross-platform codebases.',
-        'Led code reviews, mentored Android developers, and implemented CI/CD pipelines with GitHub Actions, achieved 72% test coverage (JUnit, Mockito, Espresso) with zero production regressions.'
+        'Collaborated with product managers, designers, and backend developers, contributed to API documentation, mentored developers, and worked through pull requests and code reviews in Agile, Scrum, and Kanban.',
+        'Wrote unit and integration tests (JUnit, Mockito, Espresso), troubleshot, debugged, and resolved production issues, and supported CI/CD pipelines releases with GitHub Actions.'
       ],
     ),
     Experience(
@@ -145,11 +147,10 @@ abstract final class PortfolioData {
       period: '2018 — 2022',
       location: 'Thane, India',
       points: <String>[
-        'Designed and developed scalable Android features using Kotlin, Jetpack Compose, and MVVM/Clean Architecture, applying clear separation of concerns across UI, domain, repository, and data layers.',
-        'Architected modular, scalable Android applications using Clean Architecture, Dagger, and Hilt, reducing code complexity by 40% and improving maintainability.',
-        'Migrated codebase to Kotlin and Jetpack Compose, reducing crash rate from 2.1% to 0.8%, cutting development time per feature by 30%, and improving code testability by 72% coverage.',
-        'Led a team of Android developers to build reusable native Android modules exposed to Flutter apps through method channels, enabling shared functionality across native and cross-platform codebases.',
-        'Led code reviews, mentored Android developers, and implemented CI/CD pipelines with GitHub Actions, achieved 72% test coverage (JUnit, Mockito, Espresso) with zero production regressions.'
+        'Developed and deployed secure banking/fintech apps with Java, Kotlin, XML that scaled to 500k+ users.',
+        'Integrated Google Pay, Razorpay, PayPal, PayU payment gateways for transactions.',
+        'Enhanced application security by implementing code obfuscation, encrypted data storage, and root detection to protect sensitive data and prevent unauthorized access.',
+        'Reduced APK size by 30% through resource optimization, code shrinking, and dependency management.'
       ],
     ),
     Experience(
