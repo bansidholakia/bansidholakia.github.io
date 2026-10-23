@@ -47,14 +47,22 @@ class _AnimatedRoleTextState extends State<AnimatedRoleText> {
           child: child,
         ),
       ),
-      child: Text(
-        widget.roles[_index],
+      child: ShaderMask(
         key: ValueKey(_index),
-        textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: AppColors.text,
-          fontSize: 22,
-          fontWeight: FontWeight.w600,
+        shaderCallback: (bounds) => const LinearGradient(
+          colors: [
+            Color(0xFFFF4F64),
+            Color(0xFFFF9AAA),
+          ],
+        ).createShader(bounds),
+        child: Text(
+          widget.roles[_index],
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 22,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
     );

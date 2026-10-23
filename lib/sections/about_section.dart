@@ -35,9 +35,37 @@ class AboutSection extends StatelessWidget {
               const SizedBox(height: 58),
               Flex(
                 direction: mobile ? Axis.vertical : Axis.horizontal,
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: mobile ? CrossAxisAlignment.center : CrossAxisAlignment.start,
                 children: [
                   Container(
+                    width: 90,
+                    height: 90,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: const Color(0xFFD8C7C2), // background color
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: .18),
+                          blurRadius: 28,
+                          spreadRadius: 2,
+                          offset: const Offset(0, 10),
+                        ),
+                        BoxShadow(
+                          color: AppColors.accent.withValues(alpha: .10),
+                          blurRadius: 24,
+                          spreadRadius: 1,
+                          offset: const Offset(0, 4),
+                        ),
+                      ],
+                    ),
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/images/profile.jpeg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  /*Container(
                     width: 148,
                     height: 148,
                     decoration: BoxDecoration(
@@ -64,7 +92,7 @@ class AboutSection extends StatelessWidget {
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                  ),
+                  )*/
                   SizedBox(width: mobile ? 0 : 54, height: mobile ? 34 : 0),
                   if (mobile)
                     const _AboutContent(centered: true)
